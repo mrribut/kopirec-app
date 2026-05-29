@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KopiRec — Daftar Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan latar belakang Sage Green lembut (#E3E8E2) dan warna teks Charcoal (#242625) */
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #E3E8E2; color: #242625; }
+        h3, .serif-title { font-family: 'Playfair Display', serif; color: #242625; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="border-b-4 border-[#242625] bg-[#F4F6F3] sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <a href="/" class="serif-title text-3xl font-bold tracking-tight italic">KopiRec<span class="text-neutral-400">.</span></a>
+            <nav class="flex space-x-12 text-xs uppercase font-bold tracking-widest">
+                <a href="/" class="text-neutral-400 hover:text-[#242625] transition">01 / Rekomendasi</a>
+                <a href="/coffee_shop" class="text-[#242625] underline decoration-2 underline-offset-8">02 / Direktori</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        
+        <div class="mb-16 border-l-4 border-[#242625] pl-8 py-2">
+            <p class="text-[10px] font-mono uppercase tracking-widest text-neutral-500 mb-2">// Eksplorasi Data</p>
+            <h2 class="serif-title text-5xl font-bold tracking-tight">Daftar Coffee Shop</h2>
+            <p class="text-sm text-neutral-600 mt-2 max-w-xl">Menampilkan total keseluruhan data coffee shop yang terindeks di dalam sistem.</p>
+        </div>
+
+        <div class="mb-16">
+            <form action="/coffee_shop" method="GET" class="flex flex-col sm:flex-row gap-3">
+                <input type="text" name="search" value="{{ keyword }}" placeholder="Ketik nama coffee shop yang dicari..." 
+                       class="flex-grow border-4 border-[#242625] px-5 py-4 text-sm font-medium focus:outline-none bg-[#F4F6F3] placeholder-neutral-400 text-[#242625]">
+                
+                <div class="flex gap-2">
+                    <button type="submit" class="w-full sm:w-auto bg-[#242625] text-white px-8 py-4 text-xs uppercase font-bold tracking-widest hover:bg-neutral-800 transition border-2 border-[#242625]">
+                        Cari
+                    </button>
+                    {% if keyword %}
+                    <a href="/coffee_shop" class="bg-white text-neutral-600 border-4 border-[#242625] px-6 py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center hover:bg-neutral-100 transition">
+                        Reset
+                    </a>
+                    {% endif %}
+                </div>
+            </form>
+            {% if keyword %}
+            <p class="text-xs text-neutral-500 mt-3 font-mono">KATA KUNCI: <span class="italic font-bold text-[#C87A53]">"{{ keyword }}"</span></p>
+            {% endif %}
+        </div>
+
+        <div class="space-y-8">
+            {% if coffee_shops %}
+                {% for cs in coffee_shops %}
+                <div class="bg-[#F4F6F3] border-4 border-[#242625] p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-[6px_6px_0px_0px_rgba(36,38,37,0.15)] group hover:shadow-[6px_6px_0px_0px_rgba(36,38,37,1)] transition-all duration-200">
+                    
+                    <div class="space-y-3 flex-grow">
+                        <div>
+                            <span class="text-[10px] font-mono tracking-widest text-neutral-400 block">#{{ cs.No }}</span>
+                            <h3 class="text-3xl font-bold tracking-tight text-black mt-1">{{ cs.Nama }}</h3>
+                        </div>
+                        
+                        <p class="text-xs text-neutral-500 italic"> {{ cs.Alamat }}</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs uppercase tracking-wide text-neutral-600">
+                            <div>
+                                <span class="block text-[9px] font-mono text-neutral-400 mb-0.5">FASILITAS:</span>
+                                <span class="font-medium text-[#242625]">{{ cs.Fasilitas }}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[9px] font-mono text-neutral-400 mb-0.5">KATEGORI MENU:</span>
+                                <span class="font-medium text-[#242625]">{{ cs.Menu }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:text-right border-t-2 md:border-t-0 pt-4 md:pt-0 border-neutral-200 flex-shrink-0 flex md:flex-col justify-between items-center justify-center min-w-[140px]">
+                        <span class="text-[9px] font-mono tracking-wider text-neutral-400 uppercase">RATA RATA HARGA</span>
+                        <p class="text-2xl font-bold text-[#C87A53]">Rp {{ cs.Harga|int }}.000</p>
+                    </div>
+
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-center py-20 bg-[#F4F6F3] border-4 border-dashed border-neutral-400">
+                    <p class="text-neutral-500 text-sm font-medium">Entitas coffee shop dengan kata kunci tersebut tidak ditemukan dalam database.</p>
+                </div>
+            {% endif %}
+        </div>
+
+    </main>
+
+    <footer class="py-12 border-t-2 border-neutral-300 text-center text-xs font-mono text-neutral-500 uppercase tracking-widest mt-20">
+        KOPIREC 2026
+    </footer>
+
+</body>
+</html>
