@@ -30,71 +30,72 @@
 <body class="antialiased">
 
     <header class="border-b-4 border-[#242625] bg-[#F4F6F3] sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
-            <a href="/" class="serif-title text-3xl font-bold tracking-tight italic">KopiRec<span class="text-neutral-400">.</span></a>
-            <nav class="flex space-x-12 text-xs uppercase font-bold tracking-widest">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <a href="/" class="serif-title text-2xl sm:text-3xl font-bold tracking-tight italic">KopiRec<span class="text-neutral-400">.</span></a>
+            <nav class="flex space-x-6 sm:space-x-12 text-[10px] sm:text-xs uppercase font-bold tracking-widest">
                 <a href="/" class="text-[#242625] underline decoration-2 underline-offset-8">01 / Rekomendasi</a>
                 <a href="/coffee_shop" class="text-neutral-400 hover:text-[#242625] transition">02 / Direktori</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-16">
+    <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
         
-        <div class="lg:col-span-5 lg:sticky lg:top-32 h-fit">
-            <p class="text-xs uppercase tracking-widest font-bold text-neutral-500 mb-4">// System.V1</p>
-            <h2 class="serif-title text-6xl font-bold tracking-tight leading-none mb-6">
-                Cari <br><span class="italic font-normal text-neutral-500">Coffee Shop</span> <br>Sesuai Selera.
+        <div class="lg:col-span-5 lg:sticky lg:top-32 h-fit text-center lg:text-left">
+            <p class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-neutral-500 mb-2 sm:mb-4">// System.V1</p>
+            <h2 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-none mb-4 sm:mb-6">
+                Cari <br class="hidden lg:block"><span class="italic font-normal text-neutral-500">Coffee Shop</span> <br class="hidden lg:block">Sesuai Selera.
             </h2>
-            <div class="w-full h-1 bg-[#242625] mb-6"></div>
-            <p class="text-sm text-neutral-600 max-w-sm leading-relaxed">
-                Mesin komputasi berbasis teks yang mencocokkan preferensi personal Anda dengan data coffee shop yang ada di sistem kami.</p>
+            <div class="w-full h-1 bg-[#242625] mb-4 sm:mb-6"></div>
+            <p class="text-xs sm:text-sm text-neutral-600 max-w-sm mx-auto lg:mx-0 leading-relaxed">
+                Mesin komputasi berbasis teks yang mencocokkan preferensi personal Anda dengan data coffee shop yang ada di sistem kami.
+            </p>
         </div>
 
-        <div class="lg:col-span-7 space-y-12 bg-[#F4F6F3] border-4 border-[#242625] p-8 md:p-12 shadow-[8px_8px_0px_0px_rgba(36,38,37,1)]">
-            <form action="/cari_rekomendasi" method="POST" class="space-y-12">
+        <div class="lg:col-span-7 space-y-8 sm:space-y-12 bg-[#F4F6F3] border-4 border-[#242625] p-4 sm:p-8 md:p-12 shadow-[4px_4px_0px_0px_rgba(36,38,37,1)] sm:shadow-[8px_8px_0px_0px_rgba(36,38,37,1)]">
+            <form action="/cari_rekomendasi" method="POST" class="space-y-8 sm:space-y-12">
                 
                 <div>
-                    <span class="text-xs font-mono text-neutral-400 block mb-2">[ PILIHAN 01 ]</span>
-                    <h3 class="text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-6">Rata-rata Harga</h3>
-                    <div class="space-y-3">
+                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 01 ]</span>
+                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Rata-rata Harga</h3>
+                    <div class="space-y-2 sm:space-y-3">
                         {% for h in harga %}
-                        <label class="flex items-center space-x-4 p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
+                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
                             <input type="radio" name="harga" value="{{ h }}">
-                            <span class="text-sm font-bold tracking-tight">Rp {{ h|int }}.000</span>
+                            <span class="text-xs sm:text-sm font-bold tracking-tight">Rp {{ h|int }}.000</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
                 <div>
-                    <span class="text-xs font-mono text-neutral-400 block mb-2">[ PILIHAN 02 ]</span>
-                    <h3 class="text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-6">Fasilitas</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 02 ]</span>
+                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Fasilitas</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
                         {% for f in fasilitas %}
-                        <label class="flex items-center space-x-4 p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
+                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
                             <input type="checkbox" name="fasilitas" value="{{ f }}">
-                            <span class="text-sm uppercase tracking-wide">{{ f }}</span>
+                            <span class="text-xs sm:text-sm uppercase tracking-wide">{{ f }}</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
                 <div>
-                    <span class="text-xs font-mono text-neutral-400 block mb-2">[ PILIHAN 03 ]</span>
-                    <h3 class="text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-6">Kategori Menu</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 03 ]</span>
+                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Kategori Menu</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
                         {% for m in menu %}
-                        <label class="flex items-center space-x-4 p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
+                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
                             <input type="checkbox" name="menu" value="{{ m }}">
-                            <span class="text-sm uppercase tracking-wide">{{ m }}</span>
+                            <span class="text-xs sm:text-sm uppercase tracking-wide">{{ m }}</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
-                <div class="pt-6">
-                    <button type="submit" class="w-full bg-[#C87A53] text-white py-5 text-xs uppercase font-bold tracking-[0.3em] hover:bg-[#B36842] border-2 border-[#242625] transition shadow-[4px_4px_0px_0px_rgba(36,38,37,1)] active:translate-y-1 active:shadow-none">
+                <div class="pt-4 sm:pt-6">
+                    <button type="submit" class="w-full bg-[#C87A53] text-white py-4 sm:py-5 text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] sm:tracking-[0.3em] hover:bg-[#B36842] border-2 border-[#242625] transition shadow-[4px_4px_0px_0px_rgba(36,38,37,1)] active:translate-y-1 active:shadow-none">
                         Cari Rekomendasi
                     </button>
                 </div>
@@ -103,7 +104,7 @@
         </div>
     </main>
 
-    <footer class="py-12 border-t-2 border-neutral-300 text-center text-xs tracking-widest text-neutral-500 font-mono">
+    <footer class="py-8 sm:py-12 border-t-2 border-neutral-300 text-center text-[10px] sm:text-xs tracking-widest text-neutral-500 font-mono">
         KOPIREC 2026
     </footer>
 
