@@ -1,41 +1,41 @@
 ﻿No;Nama;Fasilitas;Menu;Harga;Alamat
-1;Lucon coffe;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack;15.000;Jl. Slamet Riyadi No.385, Sondakan, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147
-2;Lana Coffe;Ac,Wifi,Indoor;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.440, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
+1;Lucon coffe;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,Snack;15.000;Jl. Slamet Riyadi No.385, Sondakan, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147
+2;Lana Coffe;Ac,Wifi,Indoor,Instagramable;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.440, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
 3;Satuperlima Coffe;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,dessert,Makanan Berat;20.000;Jl. Slamet Riyadi No.418, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
-4;ODDS;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert;25.000;Jl. Slamet Riyadi No.241, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
-5;Getsee;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert;25.000;Jl. Slamet Riyadi No.268 Rt06/04, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57714
-6;Kaveloka;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.151, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
-7;Warkop Purwo;Wifi,Outdoor;Non Coffee,Snack;15.000;Jl. Menur, RT.2/RW.XI, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
+4;ODDS;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,Snack,dessert;25.000;Jl. Slamet Riyadi No.241, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
+5;Getsee;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,Snack,dessert;25.000;Jl. Slamet Riyadi No.268 Rt06/04, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57714
+6;Kaveloka;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.151, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
+7;Warkop Purwo;Wifi,Outdoor,Instagramable,View;Non Coffee,Snack;15.000;Jl. Menur, RT.2/RW.XI, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
 8;The Gade Coffe;Ac,Wifi,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,dessert,Makanan Berat;25.000;Komplek Pegadaian Purwotomo, Jl. Slamet Riyadi No.357, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 9;Bercanda Coffee;Wifi,Outdoor;Non Coffee;20.000;Jl. Slamet Riyadi No.364, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 10;RND Coffee;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert;25.000;Jl. Slamet Riyadi, Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
-11;Margi Coffee;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert;25.000;Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
-12;Tangga Putar;Ac,Wifi,Indoor;Non Coffee,Snack,dessert;20.000;Jl. Slamet Riyadi No.187, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
-13;Sareh Coffee;Ac,Wifi,Outdoor,Indoor;Non Coffee,dessert,Makanan Berat;25.000;sebrang solo bistro, Jl. Slamet Riyadi No.184, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
+11;Margi Coffee;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,Snack,dessert;25.000;Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
+12;Tangga Putar;Ac,Wifi,Indoor,Instagramable;Non Coffee,Snack,dessert;20.000;Jl. Slamet Riyadi No.187, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
+13;Sareh Coffee;Ac,Wifi,Outdoor,Indoor,Instagramable;Non Coffee,dessert,Makanan Berat;25.000;sebrang solo bistro, Jl. Slamet Riyadi No.184, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
 14;Sekutu Coffee;Ac,Wifi,Indoor;Non Coffee;30.000;Jl. Slamet Riyadi No.116, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57151
 15;Konichiwa;Ac,Wifi,Outdoor,Indoor;Non Coffee,dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.85, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57122
-16;Fragtal Urban Coffee;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert;20.000;Jl. Pelatuk I, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
+16;Fractal Urban Coffee;Ac,Wifi,Outdoor,Indoor,Instagramable,Tempat Parkir;Non Coffee,Snack,dessert;20.000;Jl. Pelatuk I, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
 17;Sobo Kopi;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,dessert;20.000;Jl. Raya Solo Baru No.b, B No.08, Dusun I, Langenharjo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
-18;Bento Kopi UMS;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,dessert,Makanan Berat;25.000;Jl. Menco Raya No.109, Nilagraha, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-19;Bestie Kopi UMS;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,dessert,Makanan Berat;25.000;Jalan Perum Gonilan Asri 2 RT.003 RW012, Nilagraha, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-20;Tentrem Bumi;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,dessert,Makanan Berat;30.000;Desa Gonilan, Tengah, RT.02/RW.12, Nilagraha, Jawa, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-21;Sapa Kopi;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah;Non Coffee,Snack,Makanan Berat;20.000;Jl. Rajawali Raya, Geduren, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-22;Arja Cafe;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,dessert,Makanan Berat;30.000;Jl. Palem Raya No.9, Gatak, Gajahan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57176
+18;Bento Kopi UMS;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Tempat Parkir;Non Coffee,dessert,Makanan Berat;25.000;Jl. Menco Raya No.109, Nilagraha, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+19;Bestie Kopi UMS;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Tempat Parkir;Non Coffee,dessert,Makanan Berat;25.000;Jalan Perum Gonilan Asri 2 RT.003 RW012, Nilagraha, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+20;Tentrem Bumi;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Tempat Parkir,Instagramable;Non Coffee,dessert,Makanan Berat;30.000;Desa Gonilan, Tengah, RT.02/RW.12, Nilagraha, Jawa, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+21;Sapa Kopi;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Tempat Parkir,Instagramable,View;Non Coffee,Snack,Makanan Berat;20.000;Jl. Rajawali Raya, Geduren, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+22;Arja Cafe;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Tempat Parkir, Instagramable;Non Coffee,dessert,Makanan Berat;30.000;Jl. Palem Raya No.9, Gatak, Gajahan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57176
 23;Heika Kopi Kartasura;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi, Kabalan, Ngadirejo, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57163
-24;HOS Coffee ;Ac,Wifi,Indoor;Non Coffee,dessert,Makanan Berat;25.000;Gg. Sayuran III, Dusun IV, Kartasura, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-25;Konco Space;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.357, Dusun III, Makamhaji, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
-26;Kopi Nako;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,Makanan Berat;30.000;Jl. Kalitan No.1, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
+24;HOS Coffee ;Ac,Wifi,Indoor,Tempat Parkir;Non Coffee,dessert,Makanan Berat;25.000;Gg. Sayuran III, Dusun IV, Kartasura, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+25;Konco Space;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting, Instagramable,Tempat Parkir,View;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.357, Dusun III, Makamhaji, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+26;Kopi Nako;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting,Instagramable,Tempat Parkir,View;Non Coffee,Snack,Makanan Berat;30.000;Jl. Kalitan No.1, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 27;Kopi Titik Koma;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,dessert,Makanan Berat;30.000;Jl. Ir. Soekarno No.25, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
-28;OXYCO Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,dessert,Makanan Berat;30.000;Ruko Narendra JD-23 Solo Baru, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
-29;Vessel Coffee Solo;Ac,Wifi,Indoor;Non Coffee,Snack;25.000;Jl. Raya Solo, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
+28;OXYCO Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting,Instagramable;Non Coffee,Snack,dessert,Makanan Berat;30.000;Ruko Narendra JD-23 Solo Baru, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
+29;Vessel Coffee Solo;Ac,Wifi,Indoor, Outdoor,View;Non Coffee,Snack;25.000;Jl. Raya Solo, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
 30;Blooms Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Makanan Berat;25.000;Sukoharjo Solo Baru, Dusun I, Madegondo, Kec. Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552
 31;Letravail Coffee;Ac,Wifi,Outdoor,Indoor;Non Coffee,Snack,dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.227, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
-32;Night Owls;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Adi Sucipto No.24, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
-33;Slari Coffee;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.111, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
-34;Sourta Coffee;Ac,Wifi,Indoor;Non Coffee,dessert;30.000;Jl. Slamet Riyadi No.335, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
-35;Tetra Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.560, Jajar, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146
+32;Night Owls;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting, Instagramable,Tempat Parkir;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Adi Sucipto No.24, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
+33;Slari Coffee;Ac,Wifi,Outdoor,Indoor,Tempat Ibadah,Ruang Meeting, Instagramable,Tempat Parkir;Non Coffee,Snack,dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.111, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57151
+34;Sourta Coffee;Ac,Wifi,Indoor,Instagramable;Non Coffee,dessert;30.000;Jl. Slamet Riyadi No.335, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
+35;Tetra Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting,Instagramable;Non Coffee,Snack,dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.560, Jajar, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146
 36;Head Room;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Makanan Berat;30.000;Jl. Perintis Kemerdekaan No.44, Sondakan, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147
-37;UD Djaya;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.103, RT.002/RW.03, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57118
+37;UD Djaya;Ac,Wifi,Indoor,Outdoor,Instagramable;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.103, RT.002/RW.03, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57118
 38;Communion;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Makanan Berat;25.000;Jl. Brigjen Slamet Riyadi No.61, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57122
 39;Kalagyan;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack;25.000;Jl. Slamet Riyadi No.11, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57122
 40;La Luna;Ac,Wifi,Indoor;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.102, RT.03/RW.02, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57151
@@ -43,7 +43,7 @@
 42;Sejalan Coffee;Outdoor;Non Coffee;15.000;Jl. Slamet Riyadi No.39, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57122
 43;Kayu Manis Coffee;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,Makanan Berat;30.000;Jl. Slamet Riyadi No.158, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57151
 44;Blackbird Coffee;Ac,Wifi,Indoor,Ruang Meeting;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Honggowongso No.16, Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57149
-45;Fore Coffee;Ac,Wifi,Indoor,Ruang Meeting;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.317, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
+45;Fore Coffee;Ac,Wifi,Indoor,Ruang Meeting,Tempat Parkir;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.317, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 46;Point Coffee;Ac,Wifi,Indoor;Non Coffee;20.000;Jl. Ronggowarsito No.151, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
 47;Harso Coffee;Ac,Wifi,Indoor;Non Coffee,Snack;25.000;Jl. Perintis Kemerdekaan No.15, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147
 48;Lavana ;Ac,Wifi,Indoor,Outdoor;Non Coffee,Makanan Berat;25.000;Jl. Slamet Riyadi No.223, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57142
@@ -51,19 +51,19 @@
 50;Blu Coffee;Ac,Wifi,Indoor;Non Coffee,Snack;20.000;Jl. Slamet Riyadi, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
 51;Starbuck Slamet Riyadi;Ac,Wifi,Indoor;Non Coffee,dessert;30.000;Jl. Slamet Riyadi No.301, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 52;Am Pm;Ac,Wifi,Indoor;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Slamet Riyadi No.408, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57144
-53;Cold N Brew;Ac,Wifi,Indoor;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Hasanudin No.129, Punggawan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57132
+53;Cold N Brew;Ac,Wifi,Indoor,Instagramable,Tempat Parkir;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Hasanudin No.129, Punggawan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57132
 54;Kooken Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Makanan Berat;25.000;Jl. Wijaya Kusuma No.30, Kauman, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57112
 55;Pixel Coffee;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Satrio Wibowo No.35, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142
 56;Wahidin Coffee;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Dr. Wahidin No.3 A, Penumping, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57148
 57;Aming Coffee;Ac,Indoor;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Slamet Riyadi No.451-455, Pajang, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146
-58;Duadelapan Coffee;Ac,Wifi,Indoor;Non Coffee,Snack,Dessert;25.000;Jl. Gajahmada No.10, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
-59;Hella Coffee;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Dr. Rajiman No.327, Panularan, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57149
+58;Duadelapan Coffee;Ac,Wifi,Indoor,Instagramable;Non Coffee,Snack,Dessert;25.000;Jl. Gajahmada No.10, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
+59;Hella Coffee;Ac,Wifi,Indoor,Tempat Ibadah,Tempat Parkir;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Dr. Rajiman No.327, Panularan, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57149
 60;Blue Dors Solo;Ac,Wifi,Indoor,Outdoor;Non Coffee;30.000;Jl. RE. Martadinata No.15, Sudiroprajan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57121
 61;Almamater Coffee;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Kolonel Sutarto No.32, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
 62;East Side Coffee;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Dessert,Makanan Berat;25.000;Jl. Ir. Sutami No.21, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
 63;Aperto;Ac,Wifi,Indoor,Outdoor,Ruang Meeting;Non Coffee,Snack,Makanan Berat;30.000;Jl. Ir. Juanda No.121, Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129
 64;Ornito;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack,Makanan Berat;20.000;Jl. Kartika Jl. Ngoresan No.8, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
-65;Swargi Coffee;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,Snack,Dessert;25.000;Jl. Jageran No.1 RT03, RW.04, Ketelan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57132
+65;Swargi Coffee;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Instagramable;Non Coffee,Snack,Dessert;25.000;Jl. Jageran No.1 RT03, RW.04, Ketelan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57132
 66;Fellowship;Ac,Wifi,Indoor;Non Coffee,Snack,Dessert;20.000;Jl. Ir. Juanda No.210, Sewu, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129
 67;Kawan Tuli;Ac,Wifi,Indoor;Non Coffee,Snack;20.000;Jl. Cut Nya Dien No.32, Gandekan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57122
 68;Distrik Mataram;Ac,Wifi,Indoor;Non Coffee,Snack,Makanan Berat;15.000;Jl. Komodo Raya No.2, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133
@@ -82,7 +82,7 @@
 81;Kopi Jenni;Ac,indoor,Outdoor;Non Coffee,Snack;20.000;Jl. Kebangkitan Nasional, Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
 82;Mojopahit Kopi;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,Snack,Makanan Berat;30.000;Jl. Majapahit IV No.8a, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
 83;Kopi Kenangan;Ac,Wifi,Indoor;Non Coffee,Snack,Dessert;25.000;Jl. Teuku Umar No.17, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
-84;Golden Coffee;Ac,Wifi,Indoor;Non Coffee,Snack,Makanan Berat;15.000;Jl. Mr. Sartono No.39, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
+84;Golden Coffee;Ac,Wifi,Indoor,Tempat Parkir;Non Coffee,Snack,Makanan Berat;15.000;Jl. Mr. Sartono No.39, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
 85;Kedai Cinta;Outdoor;Non Coffee,Snack;15.000;Jl. Letjen Sutoyo No.44, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57136
 86;Seramah;Ac,Wifi,Indoor,Outdoor,Ruang Meeting;Non Coffee,Snack,Makanan Berat;25.000;Jl. Mr. Sartono No.44, cengklik, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
 87;Belikopi Nusukan;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah;Non Coffee,Dessert;15.000;Jl. Kapten Piere Tendean No.162, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
@@ -91,11 +91,11 @@
 90;Mamanopalas;Outdoor,Wifi;Non Coffee,Makanan Berat;15.000;Jl. Majapahit V No.14, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
 91;Joxs Coffee;Ac,Wifi,Indoor,Outdoor,Ruang Meeting;Non Coffee,Snack,Dessert,Makanan Berat;30.000;Jl. Imam Bonjol, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57313
 92;Kopi Enem;Outdoor;Non Coffee,Snack;15.000;Jl. Ki Mangun Sarkoro No.14, Nusukan, Tengah 57135, Jawa, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135
-93;Loske Coffee;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack;30.000;Jl. Teuku Umar No.48, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
+93;Loske Coffee;Ac,Wifi,Indoor,Outdoor,Instagramable;Non Coffee,Snack;30.000;Jl. Teuku Umar No.48, Keprabon, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131
 94;Nauka Coffee;Ac,Wifi,Indoor,Tempat Ibadah;Non Coffee,Snack;20.000;Jl. Perintis Kemerdekaan No.8, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57147
 95;Kedai Nescafe;Outdoor;Non Coffee;15.000;Jl. Joko Tingkir No.27 01/21, Dusun I, Makamhaji, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161
 96;Tomuan Coffee;Ac,Wifi,Indoor,Outdoor,Tempat Ibadah,Ruang Meeting;Non Coffee,Snack,Makanan Berat;30.000;Jl. Menteri Supeno No.7B, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139
-97;Lesung Pipi;Ac,Wifi,Indoor,Outdoor;Non Coffee,Snack,Makanan Berat;25.000;Jl. Dr. Cipto Mangunkusumo No.3, Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
-98;UNS Coffee;Ac,Wifi,Indoor,Ruang Meeting;Non Coffee,Snack,Makanan Berat;20.000;Gedung BRI UNS Corner, Jl. Ir. Sutami No.36a, Jebres, Surakarta City, Central Java 57126
-99;Bukuku Lawas;Ac,Wifi,Indoor;Non Coffee,Snack,Makanan Berat;15.000;Jl. Guruh No.26, RT. 01, Ngasinan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
+97;Lesung Pipi;Ac,Wifi,Indoor,Outdoor,Instagramable;Non Coffee,Snack,Makanan Berat;25.000;Jl. Dr. Cipto Mangunkusumo No.3, Sriwedari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57141
+98;UNS Coffee;Ac,Wifi,Indoor,Ruang Meeting,Tempat Parkir;Non Coffee,Snack,Makanan Berat;20.000;Gedung BRI UNS Corner, Jl. Ir. Sutami No.36a, Jebres, Surakarta City, Central Java 57126
+99;Bukuku Lawas;Ac,Wifi,Indoor,Instagramable;Non Coffee,Snack,Makanan Berat;15.000;Jl. Guruh No.26, RT. 01, Ngasinan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
 100;Joyoux Coffee;Ac,Wifi,Indoor,Outdoor;Non Coffee,Dessert;15.000;Jl. Moh. Yamin, Jayengan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57153

@@ -5,98 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KopiRec — Daftar Coffee Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        /* Menggunakan latar belakang Sage Green lembut (#E3E8E2) dan warna teks Charcoal (#242625) */
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #E3E8E2; color: #242625; }
-        h3, .serif-title { font-family: 'Playfair Display', serif; color: #242625; }
+        body { 
+            background-color: #E3E8E2; 
+            color: #242625; 
+            overflow-x: hidden; 
+        }
+        .js-hide { 
+            opacity: 0; 
+            transform: translateY(30px);
+        }
+        /* Custom scrollbar untuk kenyamanan user */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #E3E8E2; }
+        ::-webkit-scrollbar-thumb { background: #C87A53/40; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C87A53; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen flex flex-col font-sans">
 
-    <header class="border-b-4 border-[#242625] bg-[#F4F6F3] sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <a href="/" class="serif-title text-3xl font-bold tracking-tight italic">KopiRec<span class="text-neutral-400">.</span></a>
-            <nav class="flex space-x-12 text-xs uppercase font-bold tracking-widest">
-                <a href="/" class="text-neutral-400 hover:text-[#242625] transition">01 / Rekomendasi</a>
-                <a href="/coffee_shop" class="text-[#242625] underline decoration-2 underline-offset-8">02 / Direktori</a>
-            </nav>
-        </div>
-    </header>
+    <div class="relative z-10 flex flex-col min-h-screen flex-grow w-full">
 
-    <main class="max-w-4xl mx-auto px-6 py-16">
-        
-        <div class="mb-16 border-l-4 border-[#242625] pl-8 py-2">
-            <p class="text-[10px] font-mono uppercase tracking-widest text-neutral-500 mb-2">// Eksplorasi Data</p>
-            <h2 class="serif-title text-5xl font-bold tracking-tight">Daftar Coffee Shop</h2>
-            <p class="text-sm text-neutral-600 mt-2 max-w-xl">Menampilkan total keseluruhan data coffee shop yang terindeks di dalam sistem.</p>
-        </div>
-
-        <div class="mb-16">
-            <form action="/coffee_shop" method="GET" class="flex flex-col sm:flex-row gap-3">
-                <input type="text" name="search" value="{{ keyword }}" placeholder="Ketik nama coffee shop yang dicari..." 
-                       class="flex-grow border-4 border-[#242625] px-5 py-4 text-sm font-medium focus:outline-none bg-[#F4F6F3] placeholder-neutral-400 text-[#242625]">
+        <!-- HEADER: Sticky Premium Navigation -->
+        <header class="w-full bg-[#F4F6F3]/90 backdrop-blur-md sticky top-0 z-50 border-b border-neutral-300/40 shadow-xs">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+                <a href="/" class="font-serif text-2xl font-bold tracking-tight italic flex-shrink-0 text-[#242625] hover:opacity-80 transition">
+                    KopiRec<span class="text-[#C87A53]">.</span>
+                </a>
                 
-                <div class="flex gap-2">
-                    <button type="submit" class="w-full sm:w-auto bg-[#242625] text-white px-8 py-4 text-xs uppercase font-bold tracking-widest hover:bg-neutral-800 transition border-2 border-[#242625]">
-                        Cari
-                    </button>
+                <nav class="flex space-x-6 sm:space-x-8 text-[11px] uppercase font-bold tracking-widest flex-shrink-0">
+                    <a href="/" class="text-[#242625] border-b-2 border-[#C87A53] pb-1 transition-all">Coffee Shop</a>
+                    <a href="/rekomendasi" class="text-neutral-400 hover:text-[#242625] pb-1 transition-all">Rekomendasi</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="w-full flex-grow">
+            
+           <!-- HERO BANNER: Full-Screen Viewport Modern Layout (CORRECTED) -->
+            <div id="hero-section" class="w-full relative overflow-hidden bg-[#F4F6F3] text-[#242625] border-b border-neutral-300/60 min-h-[calc(100vh-69px)] flex items-stretch js-hide">
+                <div class="w-full grid grid-cols-1 lg:grid-cols-12 min-h-full items-stretch">
+                    
+                   <!-- SISI KIRI: Teks & Informasi (Kajian Kultural) - DIUBAH RATA KANAN-KIRI -->
+                    <div class="lg:col-span-7 p-8 sm:p-12 lg:p-20 z-10 relative flex flex-col justify-center bg-[#F4F6F3]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="inline-flex items-center gap-2 bg-[#C87A53]/10 border border-[#C87A53]/30 text-[#C87A53] px-3 py-1.5 rounded-full shadow-2xs mb-6 max-w-fit">
+                                <i class="fa-solid fa-graduation-cap text-xs"></i>
+                                <span class="text-[9px] uppercase font-bold tracking-widest">Sejarah Kopi</span>
+                            </div>
+                            
+                            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#242625] leading-[1.15] max-w-xl">
+                                Sejarah & Transformasi Budaya Kopi di Surakarta
+                            </h1>
+                            
+                            <!-- Perbaikan: Menggunakan text-justify agar tulisan rata kanan-kiri -->
+                            <p class="text-xs sm:text-sm md:text-base text-neutral-650 leading-relaxed font-medium mt-6 max-w-xl text-justify">
+                               Berawal dari sejarah panjang perkebunan kopi kolonial di lereng Gunung Lawu dan Boyolali, budaya minum kopi di Kota Surakarta kini tampil lebih modern. 
+                               Tradisi kumpul-kumpul yang dulunya lekat dengan suasana wedangan tradisional, sekarang telah bertransformasi menjadi tren coffee shop modern yang menjadi simbol gaya hidup baru masyarakat urban Surakarta.
+                        </div>
+                        <!-- Indikator Scroll Petunjuk untuk User (Diberi sedikit margin atas agar proporsional) -->
+                        <div class="pt-8 hidden lg:block animate-pulse">
+                            <p class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-down-long text-[#C87A53]"></i> Scroll ke bawah untuk melihat daftar
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SISI KANAN: Visual Kreatif & Estetis Penuh Kanan-Kiri & Atas-Bawah -->
+                    <div class="lg:col-span-5 relative w-full lg:min-h-full bg-neutral-900 overflow-hidden group cursor-pointer">
+                        <div class="absolute inset-0 bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal h-full" 
+                             style="background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop');">
+                        </div>
+                        <!-- Overlay dekoratif hangat -->
+                        <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#F4F6F3] via-transparent to-black/10 pointer-events-none"></div>
+                        
+                        <!-- Floating badge estetis (SEKARANG DIHUBUNGKAN KE HALAMAN REKOMENDASI) -->
+                        <a href="/rekomendasi" class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-xs p-4 rounded-xl border border-neutral-200 shadow-xl flex items-center gap-3 hover:bg-white hover:scale-105 hover:border-[#C87A53]/50 transition-all duration-300 z-20">
+                            <div class="w-10 h-10 rounded-full bg-[#C87A53] text-white flex items-center justify-center shadow-xs">
+                                <i class="fa-solid fa-mug-hot text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[9px] uppercase font-mono font-bold tracking-wider text-neutral-400">Jelajahi Rasa</p>
+                                <p class="text-xs font-bold text-[#242625] flex items-center gap-1.5">
+                                    Temukan Kafe Favoritmu <i class="fa-solid fa-arrow-right text-[10px] text-[#C87A53]"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KONTEN UTAMA: Area Pencarian & Daftar -->
+            <div class="max-w-4xl mx-auto px-6 pt-16">
+                
+                <!-- Section Header -->
+                <div class="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-neutral-300/40 pb-6">
+                    <div>
+                        <h2 class="font-serif text-4xl font-bold tracking-tight text-[#242625]">Daftar Coffee Shop</h2>
+                        <p class="text-xs md:text-sm text-neutral-500 mt-1">Gunakan fitur pencarian untuk menyaring kedai kopi terbaik di Surakarta.</p>
+                    </div>
+                </div>
+
+                <!-- SEARCH FORM: Dibuat Lebih User-Friendly -->
+                <div class="mb-12">
+                    <form action="/" method="GET" class="flex flex-col sm:flex-row gap-3">
+                        <div class="relative flex-grow shadow-xs rounded-xl overflow-hidden">
+                            <span class="absolute inset-y-0 left-4 flex items-center pr-3 pointer-events-none text-neutral-400">
+                                <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                            </span>
+                            <input type="text" name="search" value="{{ keyword }}" placeholder="Ketik nama coffee shop" 
+                                   class="w-full rounded-xl pl-10 pr-5 py-4 text-sm font-medium focus:outline-none bg-[#F4F6F3] border border-neutral-300/65 text-[#242625] focus:ring-2 focus:ring-[#C87A53]/20 focus:border-[#C87A53] transition-all">
+                        </div>
+                        <div class="flex gap-2">
+                            <button type="submit" class="w-full sm:w-auto bg-[#242625] text-white rounded-xl px-8 py-4 text-xs uppercase font-bold tracking-widest hover:bg-[#343735] shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer">
+                                Cari
+                            </button>
+                            {% if keyword %}
+                            <a href="/" class="bg-white border border-neutral-300 text-neutral-600 rounded-xl px-5 py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center hover:bg-neutral-50 shadow-xs transition duration-200">
+                                Reset
+                            </a>
+                            {% endif %}
+                        </div>
+                    </form>
                     {% if keyword %}
-                    <a href="/coffee_shop" class="bg-white text-neutral-600 border-4 border-[#242625] px-6 py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center hover:bg-neutral-100 transition">
-                        Reset
-                    </a>
+                    <p class="text-[10px] text-neutral-500 mt-3 font-mono uppercase tracking-wider">Hasil untuk kata kunci: <span class="font-sans font-bold text-[#C87A53] normal-case">"{{ keyword }}"</span></p>
                     {% endif %}
                 </div>
-            </form>
-            {% if keyword %}
-            <p class="text-xs text-neutral-500 mt-3 font-mono">KATA KUNCI: <span class="italic font-bold text-[#C87A53]">"{{ keyword }}"</span></p>
-            {% endif %}
-        </div>
 
-        <div class="space-y-8">
-            {% if coffee_shops %}
-                {% for cs in coffee_shops %}
-                <div class="bg-[#F4F6F3] border-4 border-[#242625] p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-[6px_6px_0px_0px_rgba(36,38,37,0.15)] group hover:shadow-[6px_6px_0px_0px_rgba(36,38,37,1)] transition-all duration-200">
-                    
-                    <div class="space-y-3 flex-grow">
-                        <div>
-                            <span class="text-[10px] font-mono tracking-widest text-neutral-400 block">#{{ cs.No }}</span>
-                            <h3 class="text-3xl font-bold tracking-tight text-black mt-1">{{ cs.Nama }}</h3>
-                        </div>
-                        
-                        <p class="text-xs text-neutral-500 italic"> {{ cs.Alamat }}</p>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs uppercase tracking-wide text-neutral-600">
-                            <div>
-                                <span class="block text-[9px] font-mono text-neutral-400 mb-0.5">FASILITAS:</span>
-                                <span class="font-medium text-[#242625]">{{ cs.Fasilitas }}</span>
+               <!-- DAFTAR CARDS: Diperkecil & Dibuat Minimalis (Hanya Nama & Harga) -->
+                <div class="space-y-4 mb-24">
+                    {% if coffee_shops %}
+                        {% for cs in coffee_shops %}
+                        <div class="bg-[#F4F6F3] rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border border-neutral-200/80 shadow-xs hover:shadow-md hover:border-neutral-300 transition-all duration-300 group">
+                            
+                            <div class="flex items-center gap-5 flex-grow">
+                                <!-- Image Thumbnail Minimalis -->
+                                <div class="w-16 h-16 rounded-xl flex-shrink-0 bg-neutral-200 overflow-hidden shadow-inner relative border border-neutral-200/60">
+                                    <img src="{{ url_for('static', filename='images/' + cs.No|string + '.jpg') }}" 
+                                         alt="{{ cs.Nama }}" 
+                                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                         onerror="this.onerror=null; this.src='https://placehold.co/150&text=KopiRec';">
+                                </div>
+
+                                <!-- Detail Teks Terbatas (Hanya Nama Kafe) -->
+                                <div>
+                                    <span class="text-[8px] font-mono tracking-widest text-neutral-400 block font-bold mb-0.5">INDEX #{{ cs.No }}</span>
+                                    <h3 class="font-sans text-lg font-bold tracking-tight text-[#242625] group-hover:text-[#C87A53] transition-colors leading-tight">
+                                        {{ cs.Nama }}
+                                    </h3>
+                                </div>
                             </div>
-                            <div>
-                                <span class="block text-[9px] font-mono text-neutral-400 mb-0.5">KATEGORI MENU:</span>
-                                <span class="font-medium text-[#242625]">{{ cs.Menu }}</span>
+
+                            <!-- Area Harga & Tombol Aksi Navigasi -->
+                            <div class="flex items-center justify-between sm:justify-end gap-6 flex-shrink-0 pt-3 sm:pt-0 border-t border-neutral-200/60 sm:border-0">
+                                <!-- Estimasi Harga -->
+                                <div class="text-left sm:text-right">
+                                    <span class="text-[8px] font-mono tracking-widest text-neutral-400 uppercase block font-bold mb-0.5">Estimasi Harga</span>
+                                    <p class="text-base font-bold text-[#C87A53]">Rp {{ cs.Harga|int }}.000</p>
+                                </div>
+                                
+                                <!-- Tombol Aksi -->
+                                <div class="flex gap-2">
+                                    <a href="/detail/{{ cs.No }}" 
+                                       class="bg-white border border-neutral-300 text-[#242625] rounded-xl text-[10px] font-bold uppercase tracking-wider text-center py-2.5 px-4 hover:bg-neutral-50 hover:border-neutral-400 transition-all flex items-center justify-center gap-1.5 shadow-2xs">
+                                        <i class="fa-solid fa-circle-info text-[#C87A53]"></i> Detail
+                                    </a>
+                                   <!-- Tombol Maps di database.html -->
+                                    <a href="https://www.google.com/maps/search/?api=1&query={{ cs.Nama|urlencode }}+Surakarta" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="bg-[#242625] text-white rounded-xl text-[10px] font-bold uppercase tracking-wider text-center py-2.5 px-3.5 hover:bg-[#343735] transition-all flex items-center justify-center gap-1.5 shadow-2xs">
+                                        <i class="fa-solid fa-map-location-dot text-[#C87A53]"></i> Maps
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
-                    </div>
-
-                    <div class="md:text-right border-t-2 md:border-t-0 pt-4 md:pt-0 border-neutral-200 flex-shrink-0 flex md:flex-col justify-between items-center justify-center min-w-[140px]">
-                        <span class="text-[9px] font-mono tracking-wider text-neutral-400 uppercase">RATA RATA HARGA</span>
-                        <p class="text-2xl font-bold text-[#C87A53]">Rp {{ cs.Harga|int }}.000</p>
-                    </div>
-
+                        {% endfor %}
+                    {% else %}
+                        <!-- UI Jika Data Tidak Ditemukan -->
+                        <div class="text-center py-16 bg-[#F4F6F3]/50 border border-dashed border-neutral-300 rounded-2xl">
+                            <i class="fa-solid fa-mug-hot text-2xl text-neutral-300 mb-3"></i>
+                            <p class="text-neutral-500 text-xs font-medium max-w-xs mx-auto">Entitas coffee shop dengan kata kunci tersebut tidak ditemukan dalam database sistem.</p>
+                        </div>
+                    {% endif %}
                 </div>
-                {% endfor %}
-            {% else %}
-                <div class="text-center py-20 bg-[#F4F6F3] border-4 border-dashed border-neutral-400">
-                    <p class="text-neutral-500 text-sm font-medium">Entitas coffee shop dengan kata kunci tersebut tidak ditemukan dalam database.</p>
-                </div>
-            {% endif %}
-        </div>
+            </div>
+        </main>
 
-    </main>
+        <!-- FOOTER -->
+        <footer class="w-full py-8 text-center text-[10px] font-mono text-neutral-400 uppercase tracking-[0.2em] bg-[#F4F6F3]/80 border-t border-neutral-300/40">
+            KOPIREC SURAKARTA © 2026
+        </footer>
 
-    <footer class="py-12 border-t-2 border-neutral-300 text-center text-xs font-mono text-neutral-500 uppercase tracking-widest mt-20">
-        KOPIREC 2026
-    </footer>
+    </div>
 
+    <!-- GSAP: Efek Transisi Animasi Saat Halaman Dimuat -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.to("#hero-section", {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+        });
+    </script>
 </body>
 </html>

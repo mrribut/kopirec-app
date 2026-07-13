@@ -1,7 +1,0 @@
-```yaml
-services:
-  - type: web
-    name: kopirec-sahrul
-    env: python
-    buildCommand: pip install -r requirements.txt && python import_data.py
-    startCommand: gunicorn app:app

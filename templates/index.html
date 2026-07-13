@@ -3,109 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KopiRec</title>
+    <title>KopiRec — Rekomendasi Personal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        /* Menggunakan latar belakang Sage Green lembut (#E3E8E2) dan warna teks Charcoal (#242625) */
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #E3E8E2; color: #242625; }
-        .serif-title { font-family: 'Playfair Display', serif; color: #242625; }
-        
-        input[type="checkbox"], input[type="radio"] {
-            border: 2px solid #242625;
-            border-radius: 0px !important;
-            appearance: none;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            transition: all 0.2s;
-            background-color: #FFF;
-        }
-        input[type="checkbox"]:checked, input[type="radio"]:checked {
-            background-color: #242625;
-            box-shadow: inset 0 0 0 3px #FFF;
-        }
+        body { background-color: #E3E8E2; color: #242625; }
+        .form-checkbox, .form-radio { accent-color: #C87A53; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen font-sans relative">
 
-    <header class="border-b-4 border-[#242625] bg-[#F4F6F3] sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <a href="/" class="serif-title text-2xl sm:text-3xl font-bold tracking-tight italic">KopiRec<span class="text-neutral-400">.</span></a>
-            <nav class="flex space-x-6 sm:space-x-12 text-[10px] sm:text-xs uppercase font-bold tracking-widest">
-                <a href="/" class="text-[#242625] underline decoration-2 underline-offset-8">01 / Rekomendasi</a>
-                <a href="/coffee_shop" class="text-neutral-400 hover:text-[#242625] transition">02 / Direktori</a>
+    <!-- BACKGROUND IMAGE OVERLAY UNTUK SISI KIRI -->
+    <div class="absolute inset-y-0 left-0 w-full lg:w-1/2 z-0 opacity-40 pointer-events-none overflow-hidden hidden lg:block select-none">
+        <div class="w-full h-full bg-cover bg-center mix-blend-multiply opacity-80" 
+             style="background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop');">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#E3E8E2]/40 to-[#E3E8E2] via-70%"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#E3E8E2]/70 via-transparent to-[#E3E8E2]/70"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="w-full bg-[#F4F6F3]/90 backdrop-blur-md sticky top-0 z-50 border-b border-neutral-300/40 shadow-xs">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+            <a href="/" class="font-serif text-2xl font-bold tracking-tight italic text-[#242625] hover:opacity-80 transition">
+                KopiRec<span class="text-[#C87A53]">.</span>
+            </a>
+            <nav class="flex space-x-6 sm:space-x-8 text-[11px] uppercase font-bold tracking-widest">
+                <a href="/" class="text-neutral-400 hover:text-[#242625] transition-all">Coffee Shop</a>
+                <a href="/rekomendasi" class="text-[#242625] border-b-2 border-[#C87A53] pb-1">Rekomendasi</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative z-10">
         
-        <div class="lg:col-span-5 lg:sticky lg:top-32 h-fit text-center lg:text-left">
-            <p class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-neutral-500 mb-2 sm:mb-4">// System.V1</p>
-            <h2 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-none mb-4 sm:mb-6">
-                Cari <br class="hidden lg:block"><span class="italic font-normal text-neutral-500">Coffee Shop</span> <br class="hidden lg:block">Sesuai Selera.
+        <!-- SIDEBAR INFO -->
+        <div class="lg:col-span-4 lg:sticky lg:top-32 h-fit text-left">
+            <div class="inline-flex items-center gap-2 bg-[#C87A53]/10 border border-[#C87A53]/30 text-[#C87A53] px-3 py-1.5 rounded-full shadow-2xs mb-6 max-w-fit">
+                <i class="fa-solid fa-filter text-[10px]"></i>
+                <span class="text-[9px] uppercase font-bold tracking-widest">Sistem Cerdas</span>
+            </div>
+            
+            <h2 class="font-serif text-4xl font-bold tracking-tight leading-[1.2] mb-6 text-[#242625]">
+                Cari Coffee Shop <br><span class="italic text-[#C87A53]">Sesuai Selera.</span>
             </h2>
-            <div class="w-full h-1 bg-[#242625] mb-4 sm:mb-6"></div>
-            <p class="text-xs sm:text-sm text-neutral-600 max-w-sm mx-auto lg:mx-0 leading-relaxed">
-                Mesin komputasi berbasis teks yang mencocokkan preferensi personal Anda dengan data coffee shop yang ada di sistem kami.
+            <div class="w-16 h-1 bg-[#C87A53] mb-6"></div>
+            <p class="text-sm text-neutral-650 leading-relaxed font-medium">
+                Sistem rekomendasi kami akan memproses preferensi Anda untuk menemukan *coffee shop* yang paling sesuai dengan kriteria yang Anda pilih.
             </p>
         </div>
 
-        <div class="lg:col-span-7 space-y-8 sm:space-y-12 bg-[#F4F6F3] border-4 border-[#242625] p-4 sm:p-8 md:p-12 shadow-[4px_4px_0px_0px_rgba(36,38,37,1)] sm:shadow-[8px_8px_0px_0px_rgba(36,38,37,1)]">
-            <form action="/cari_rekomendasi" method="POST" class="space-y-8 sm:space-y-12">
+        <!-- FORM REKOMENDASI (LEBIH LEBAR DAN MENGGUNAKAN GRID KOLOM) -->
+        <div class="lg:col-span-8 bg-[#F4F6F3] rounded-3xl p-6 sm:p-10 border border-neutral-200/80 shadow-xs">
+            <form action="/cari_rekomendasi" method="POST" class="space-y-10">
                 
+                <!-- Group: Harga (Dibuat Grid 3 Kolom agar Menyamping) -->
                 <div>
-                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 01 ]</span>
-                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Rata-rata Harga</h3>
-                    <div class="space-y-2 sm:space-y-3">
+                    <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400 mb-4 pb-2 border-b border-neutral-200">Rata-rata Harga</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {% for h in harga %}
-                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
-                            <input type="radio" name="harga" value="{{ h }}">
-                            <span class="text-xs sm:text-sm font-bold tracking-tight">Rp {{ h|int }}.000</span>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-neutral-200 bg-white hover:border-[#C87A53]/50 hover:bg-[#C87A53]/5 transition-all cursor-pointer group">
+                            <input type="radio" name="harga" value="{{ h }}" class="form-radio w-4 h-4">
+                            <span class="text-xs font-bold text-[#242625]">Rp {{ h|int }}.000</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
+                <!-- Group: Fasilitas (DIUBAH MENJADI GRID MULTI-KOLOM MENYAMPING) -->
                 <div>
-                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 02 ]</span>
-                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Fasilitas</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
+                    <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400 mb-4 pb-2 border-b border-neutral-200">Fasilitas Kafe</h3>
+                    <!-- grid-cols-2 pada HP, grid-cols-3 pada Tablet, dan grid-cols-4 pada Laptop/PC -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                         {% for f in fasilitas %}
-                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
-                            <input type="checkbox" name="fasilitas" value="{{ f }}">
-                            <span class="text-xs sm:text-sm uppercase tracking-wide">{{ f }}</span>
+                        <label class="flex items-center gap-2.5 p-2.5 rounded-xl border border-neutral-200 bg-white/60 hover:bg-white hover:border-[#C87A53]/40 transition duration-150 cursor-pointer">
+                            <input type="checkbox" name="fasilitas" value="{{ f }}" class="form-checkbox w-3.5 h-3.5 rounded">
+                            <span class="text-xs font-medium text-[#242625] uppercase tracking-wide truncate" title="{{ f }}">{{ f }}</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
+                <!-- Group: Kategori Menu (DIUBAH MENJADI GRID MULTI-KOLOM MENYAMPING) -->
                 <div>
-                    <span class="text-[10px] font-mono text-neutral-400 block mb-1">[ PILIHAN 03 ]</span>
-                    <h3 class="text-md sm:text-lg font-bold uppercase tracking-tight border-b-2 border-[#242625] pb-2 mb-4 sm:mb-6">Kategori Menu</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
+                    <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400 mb-4 pb-2 border-b border-neutral-200">Kategori Menu</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                         {% for m in menu %}
-                        <label class="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 border-2 border-transparent hover:border-[#242625] transition cursor-pointer">
-                            <input type="checkbox" name="menu" value="{{ m }}">
-                            <span class="text-xs sm:text-sm uppercase tracking-wide">{{ m }}</span>
+                        <label class="flex items-center gap-2.5 p-2.5 rounded-xl border border-neutral-200 bg-white/60 hover:bg-white hover:border-[#C87A53]/40 transition duration-150 cursor-pointer">
+                            <input type="checkbox" name="menu" value="{{ m }}" class="form-checkbox w-3.5 h-3.5 rounded">
+                            <span class="text-xs font-medium text-[#242625] uppercase tracking-wide truncate" title="{{ m }}">{{ m }}</span>
                         </label>
                         {% endfor %}
                     </div>
                 </div>
 
-                <div class="pt-4 sm:pt-6">
-                    <button type="submit" class="w-full bg-[#C87A53] text-white py-4 sm:py-5 text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] sm:tracking-[0.3em] hover:bg-[#B36842] border-2 border-[#242625] transition shadow-[4px_4px_0px_0px_rgba(36,38,37,1)] active:translate-y-1 active:shadow-none">
-                        Cari Rekomendasi
-                    </button>
-                </div>
-
+                <!-- TOMBOL SUBMIT -->
+                <button type="submit" class="w-full bg-[#242625] text-white py-4 rounded-2xl text-xs uppercase font-bold tracking-widest hover:bg-[#C87A53] transition-all shadow-xs hover:shadow-md active:scale-95 duration-250">
+                    Proses Rekomendasi
+                </button>
             </form>
         </div>
     </main>
 
-    <footer class="py-8 sm:py-12 border-t-2 border-neutral-300 text-center text-[10px] sm:text-xs tracking-widest text-neutral-500 font-mono">
-        KOPIREC 2026
+    <!-- FOOTER -->
+    <footer class="w-full py-8 text-center text-[10px] font-mono text-neutral-400 uppercase tracking-[0.2em] bg-[#F4F6F3]/50 border-t border-neutral-200/60 relative z-10">
+        KOPIREC SURAKARTA © 2026
     </footer>
 
 </body>
